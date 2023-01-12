@@ -41,20 +41,21 @@ fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=
     function displayWeather(weatherData){
       let city = data.city.name
       console.log(weatherData)
-      const weatherDisplay = $('.weather-display')
-      weatherDisplay.children('#current-forecast').append(`<h3>${city}</h3>`)
-      weatherDisplay.children('#current-forecast').append(`<p>Temperature: ${weatherData[0].temp} Celcius</p>`)
-      weatherDisplay.children('#current-forecast').append(`<p>Humidity: ${weatherData[0].humidity}%</p>`)
-      weatherDisplay.children('#current-forecast').append(`<p>Wind: ${weatherData[0].wind} MPH</p>`)
+      const currentDisplay = $('#current-forecast')
+      const fiveDayDisplay = $('.five-day')
+
+      currentDisplay.append(`<h3>${city}</h3>`)
+      currentDisplay.append(`<p>Temperature: ${weatherData[0].temp} Celcius</p>`)
+      currentDisplay.append(`<p>Humidity: ${weatherData[0].humidity}%</p>`)
+      currentDisplay.append(`<p>Wind: ${weatherData[0].wind} MPH</p>`)
 
       for (day in weatherData){
-        weatherDisplay.children('.five-day').children(`#${day}`).append(`<p>Temperature: ${weatherData[day].temp} Celcius</p>`)
-        weatherDisplay.children('.five-day').children(`#${day}`).append(`<p>Humidity: ${weatherData[day].humidity}%</p>`)
-        weatherDisplay.children('.five-day').children(`#${day}`).append(`<p>Wind: ${weatherData[day].wind} MPH</p>`)
+        fiveDayDisplay.children(`#${day}`).append(`<p>Temperature: ${weatherData[day].temp} Celcius</p>`)
+        fiveDayDisplay.children(`#${day}`).append(`<p>Humidity: ${weatherData[day].humidity}%</p>`)
+        fiveDayDisplay.children(`#${day}`).append(`<p>Wind: ${weatherData[day].wind} MPH</p>`)
       }
     }
 
-// $('.container-lg').append(`<div id="${item.hour}" class="row time-block"></div>`)
 
     function listCities(){
 
