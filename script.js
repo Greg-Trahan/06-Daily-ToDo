@@ -49,8 +49,6 @@ function listCities() {
 
 function saveCities() {
   localStorage.setItem("cities", JSON.stringify(cityHistory));
-  // const cityHistory = $(".city-history");
-  // cityHistory.append(`<button>${cityName}</button>`);
 }
 
 function weather() {
