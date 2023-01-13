@@ -1,10 +1,10 @@
-
-h1 {
+h1,
+h2 {
   text-align: center;
 }
 
-header{
-  background-image: linear-gradient(to right , rgb(72, 101, 180), darkblue);
+header {
+  background-image: linear-gradient(to right, rgb(72, 101, 180), darkblue);
   color: antiquewhite;
 }
 
@@ -16,20 +16,27 @@ h3 {
   padding: 5px;
 }
 
+.li-btn {
+  border: 2px solid black;
+  padding: 2px;
+  background-color: beige;
+  margin-bottom: 2px;
+  text-align: center;
+}
+
 .forecast {
   background-color: darkblue;
   color: antiquewhite;
   padding: 10px;
-  border-left: solid 5px white;
-  border-right: solid 5px white;
-} 
+  border: solid 5px white;
+}
 
-#search-bar{
+#search-bar {
   width: 100%;
   margin: 5px;
-  }
+}
 
-#submit-button{
+#submit-button {
   width: 100%;
   margin: 5px;
 }
