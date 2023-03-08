@@ -1,9 +1,8 @@
-# 06 Server-Side APIs: Weather Dashboard
+# 06 Weekly Weather
 
-Name: Greg Trahan  
-Due: 14JAN2023
+Name: Greg Trahan
 
-Click [here](https://greg-trahan.github.io/06-Weekly-weather/) to see my final project.
+Click [here](https://greg-trahan.github.io/06-weekly-weather/) to see my final project.
 
 ![This is a screenshot of the final page](./Capture.PNG)
 
